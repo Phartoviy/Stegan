@@ -1,8 +1,13 @@
 # Stegan
-# 1. Шифрование
-stegx encode -i commands.png -f secret.txt -o stego.png --dual-cipher --adaptive --matrix-embedding
+
+## 1. Шифрование
+stegx encode -i image.png -f secret.txt -o stego_out.png --dual-cipher --adaptive --matrix-embedding
 
 # (Программа запросит пароль для шифрования)
 
-# 2. Расшифровка
-stegx decode -i stego.png -d extract/
+## 2. Расшифровка
+stegx decode -i stego_out.png -d extract/
+
+!Необходимо учитывать две вещи:
+ - размер скрываемого файла не должен превышать 10% размера файла картинки
+ - пароль должен быть сложным > 16 символов и содержать заглавные/строчные буквы, цифры и спец символы
