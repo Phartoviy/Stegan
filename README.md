@@ -3,7 +3,7 @@
 ## 1. Шифрование
 stegx encode -i image.png -f secret.txt -o stego_out.png --dual-cipher --adaptive --matrix-embedding
 
-## (Программа запросит пароль для шифрования)
+ (Программа запросит пароль для шифрования)
 
 ## 2. Расшифровка
 stegx decode -i stego_out.png -d extract/
