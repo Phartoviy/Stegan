@@ -1,5 +1,8 @@
 # Stegan
 
+## 0. Установка
+sudo snap install stegx
+
 ## 1. Шифрование
 stegx encode -i image.png -f secret.txt -o stego_out.png --dual-cipher --adaptive --matrix-embedding
 
